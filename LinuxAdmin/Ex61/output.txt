@@ -1,0 +1,6 @@
+# I think this might now be the correct format:
+# cat << EOF >> fileName.xyz
+df -h 
+echo -en '[disk utilization for file] is: '
+du -h 
+# EOF

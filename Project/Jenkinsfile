@@ -1,0 +1,16 @@
+pipeline{
+  agent any
+  tools{
+    jdk 'OracleJDK17'
+    maven 'Maven3'
+    docker 'docker'
+    terraform 'Terraform'
+  }
+  stages{
+    stage('Git Checkout'){
+      steps{
+        git branch: 'main', credentialsId: '', url: ''
+      }
+    }
+  }
+}
